@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             appendMessage(messageText, 'sent');
             messageInput.value = '';
 
-            // In a real application, you would send this message to your Node.js backend
-            // For now, let's simulate a reply
+        
             setTimeout(() => {
                 appendMessage("Echo: " + messageText, 'received');
             }, 1000);
@@ -31,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Simulate some initial messages
+ 
     appendMessage("Hello there!", 'received');
     appendMessage("Hi! How can I help you?", 'sent');
 });
